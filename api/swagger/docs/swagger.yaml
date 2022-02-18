@@ -1,0 +1,5 @@
+info:
+  description: Documentation of Identity and Access Management System.
+  title: IAM API Server.
+paths: {}
+swagger: "2.0"
