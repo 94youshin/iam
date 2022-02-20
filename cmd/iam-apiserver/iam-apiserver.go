@@ -1,7 +1,14 @@
 package main
 
-import "github.com/usmhk/iam/internal/apiserver"
+import (
+	"os"
+
+	"github.com/usmhk/iam/cmd/iam-apiserver/app"
+)
 
 func main() {
-	apiserver.Run()
+	cmd := app.NewCommand()
+	if err := cmd.Execute(); err != nil {
+		os.Exit(1)
+	}
 }
